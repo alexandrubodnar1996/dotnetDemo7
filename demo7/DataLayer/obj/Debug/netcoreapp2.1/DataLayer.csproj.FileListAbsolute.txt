@@ -1,9 +1,0 @@
-/Users/alexandrubodnar/Desktop/dotnet repo/tema7/solution/DataLayer/bin/Debug/netcoreapp2.1/DataLayer.deps.json
-/Users/alexandrubodnar/Desktop/dotnet repo/tema7/solution/DataLayer/bin/Debug/netcoreapp2.1/DataLayer.dll
-/Users/alexandrubodnar/Desktop/dotnet repo/tema7/solution/DataLayer/bin/Debug/netcoreapp2.1/DataLayer.pdb
-/Users/alexandrubodnar/Desktop/dotnet repo/tema7/solution/DataLayer/obj/Debug/netcoreapp2.1/DataLayer.csprojAssemblyReference.cache
-/Users/alexandrubodnar/Desktop/dotnet repo/tema7/solution/DataLayer/obj/Debug/netcoreapp2.1/DataLayer.csproj.CoreCompileInputs.cache
-/Users/alexandrubodnar/Desktop/dotnet repo/tema7/solution/DataLayer/obj/Debug/netcoreapp2.1/DataLayer.AssemblyInfoInputs.cache
-/Users/alexandrubodnar/Desktop/dotnet repo/tema7/solution/DataLayer/obj/Debug/netcoreapp2.1/DataLayer.AssemblyInfo.cs
-/Users/alexandrubodnar/Desktop/dotnet repo/tema7/solution/DataLayer/obj/Debug/netcoreapp2.1/DataLayer.dll
-/Users/alexandrubodnar/Desktop/dotnet repo/tema7/solution/DataLayer/obj/Debug/netcoreapp2.1/DataLayer.pdb
