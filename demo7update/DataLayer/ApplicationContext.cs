@@ -8,15 +8,18 @@ namespace DataLayer
     {
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
         {
+            Database.EnsureCreated();
+
         }
 
         DbSet<ShoppingCart> ShoppingCarts { set; get; }
         DbSet<Product> Products { set; get; }
 
-        protected override void OnModelCreating(ModelBuilder model)
+        protected override void OnModelCreating(ModelBuilder options)
         {
-            model.Entity<ShoppingCart>().Property(sc => sc.Id).IsRequired();
-            model.Entity<Product>().Property(p => p.Id).IsRequired();
+            options.Entity<ShoppingCart>().Property(sc => sc.Id).IsRequired();
+            options.Entity<Product>().Property(p => p.Id).IsRequired();
+
         }
     }
 }

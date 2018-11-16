@@ -16,9 +16,15 @@ namespace DataLayer
         public string Description { set; get;  }
         public ICollection<Product> Products { get; set; }
 
-        public ShoppingCart()
+        private ShoppingCart()
         {
             Id = Guid.NewGuid();
+            Products = new List<Product>();
+        }
+
+        public ShoppingCart(Guid id)
+        {
+            Id = id;
             Products = new List<Product>();
         }
 

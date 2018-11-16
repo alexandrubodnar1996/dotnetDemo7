@@ -13,11 +13,17 @@ namespace BusinessLayer
         public ShopCartRepository(ApplicationContext applicationContext)
         {
             _appContext = applicationContext;
+            for (int index = 0; index < 10; index++)
+            {
+                Create();
+            }
         }
 
         public Guid Create()
         {
-            ShoppingCart shoppingCart = new ShoppingCart();
+            ShoppingCart shoppingCart = new ShoppingCart(Guid.NewGuid());
+            shoppingCart.Description = " DEfault";
+            _appContext.Set<ShoppingCart>().Add(shoppingCart);
             return shoppingCart.Id;
         }
 
