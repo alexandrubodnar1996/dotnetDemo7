@@ -16,6 +16,7 @@ namespace BusinessLayer
             for (int index = 0; index < 10; index++)
             {
                 Create();
+                _appContext.SaveChanges();
             }
         }
 
