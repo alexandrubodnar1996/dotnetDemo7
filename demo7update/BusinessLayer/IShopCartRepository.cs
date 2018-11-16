@@ -11,5 +11,6 @@ namespace BusinessLayer
         void RemoveById(Guid shopCartId, Guid guid);
         ICollection<Product> GetAllProducts(Guid shopCartId);
         Product GetById(Guid shopCartId, Guid productId);
+        ICollection<ShoppingCart> GetAllShopCarts();
     }
 }

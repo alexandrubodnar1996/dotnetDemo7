@@ -45,5 +45,10 @@ namespace BusinessLayer
             return shoppingCart.GetAllProducts();
         }
 
+        public ICollection<ShoppingCart> GetAllShopCarts()
+        {
+            return _appContext.Set<ShoppingCart>().ToList();
+        }
+
     }
 }

@@ -19,14 +19,19 @@ namespace WebApiDesign.Controllers
         public ShopCartController(IShopCartRepository repository)
         {
             _repository = repository;
+
+            for (int index = 0; index < 10; index++)
+            {
+                _repository.Create();
+            }
         }
 
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> GetAll(int id)
+        public IEnumerable<ShoppingCart> GetAll()
         {
             //return new string[] { "value1", "value2", "v3" };
-            return new string[] { "test" };
+            return _repository.GetAllShopCarts();
         }
 
         // GET api/values/5
